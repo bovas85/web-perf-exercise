@@ -1,0 +1,63 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto';
+  margin: 0;
+  padding-top: 0.1px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 100vh;
+  
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 600px;
+  }
+  
+  @media (min-width: 1440px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  grid-column: span 1;
+  grid-row: span 1;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mdc-image-list__supporting { display: none }
+
+#root {
+  margin: 8px;
+}
+
+nav {
+  ul {
+    padding: 0;
+    display: flex;
+  
+    a {
+      color: orange;
+      text-decoration: underline;
+    }
+    
+    li {
+      padding: 0 8px 0 0;
+    }
+  }
+}

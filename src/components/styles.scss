@@ -1,0 +1,49 @@
+.home,
+.basket,
+.checkout {
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    margin-top: 8px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    background: red;
+    color: white;
+    background-color: #e60000;
+    transition: all .3s ease-in-out;
+    
+    &:hover {
+      background-color: #ff2f2f;
+    }
+  }
+  
+  .product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 320px;
+  }
+}
+
+ul, ul li {
+  list-style: none;
+  padding-left: 8px;
+}
+
+.basket {
+  p {
+    padding-left: 8px;
+  }
+}
+
+.checkout {
+  margin: 16px;
+  padding: 8px;
+  box-shadow: 0 0 3px 1px grey;
+}
